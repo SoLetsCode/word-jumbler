@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>wordJumbler</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css" />
-    <script async src=".javascript/javascript.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/word-jumbler.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        Welcome to Word Jumbler
+      </h1>
 
-</head>
-<body>
-    <p>Hello this page is alive</p>
-    <p>original string is 1234578</p>
-    <h4 id='wordJumbler'>Nothing here</h4>    
-</body>
+      <form action="" class="form">
+        <textarea
+          name="user-input"
+          class="form__user-input"
+          cols="30"
+          rows="10"
+          placeholder="please input your text here"
+        ></textarea>
+        <input
+          class="form__input-button"
+          type="button"
+          name="form-button"
+          value="Jumble!"
+        />
+      </form>
+      <div class="output">Your answer will appear here</div>
+      <button class="dark-mode-button">Dark Mode</button>
+    </div>
+  </body>
 </html>
