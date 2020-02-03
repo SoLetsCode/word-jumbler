@@ -1,0 +1,118 @@
+/* reset the page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Sigmar One", cursive;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../assets/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__user-input {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-color: grey;
+  font-family: "Sigmar One", cursive;
+}
+
+.form__user-input:focus {
+  outline: transparent;
+}
+
+.form__input-button {
+  border-radius: 50%;
+  height: 13vw;
+  width: 13vw;
+  max-height: 125px;
+  max-width: 125px;
+  margin-bottom: 1rem;
+  font-family: "Sigmar One", cursive;
+  border: 3px groove gray;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(blue));
+  background-image: linear-gradient(black, blue);
+  color: orange;
+}
+
+.form__input-button:focus {
+  outline: transparent;
+}
+
+.output {
+  margin-bottom: 1rem;
+}
+
+.dark-mode-button {
+  border-radius: 10px;
+  height: 10vw;
+  width: 15vw;
+  max-height: 75px;
+  max-width: 200px;
+  margin-bottom: 1rem;
+  font-family: "Sigmar One", cursive;
+  border: 3px groove gray;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(blue));
+  background-image: linear-gradient(black, blue);
+  color: orange;
+}
+
+.dark-mode-background {
+  background-image: url(../assets/darkmode-background-image.jpg);
+}
+
+.dark-mode-text {
+  color: orange;
+}
+
+.dark-mode-user-input {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
