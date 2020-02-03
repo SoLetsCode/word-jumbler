@@ -6,6 +6,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Sigmar One", cursive;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 *,
@@ -41,6 +43,7 @@ body {
     margin-bottom: 1rem;
     border-color: grey;
     font-family: "Sigmar One", cursive;
+    font-size: 0.68rem;
 
     &:focus {
       outline: transparent;
@@ -49,12 +52,13 @@ body {
 
   &__input-button {
     border-radius: 50%;
-    height: 13vw;
-    width: 13vw;
+    height: 14vw;
+    width: 14vw;
     max-height: 125px;
     max-width: 125px;
     margin-bottom: 1rem;
     font-family: "Sigmar One", cursive;
+    font-size: 0.68rem;
     border: 3px groove gray;
     background-image: linear-gradient(black, blue);
     color: orange;
@@ -71,15 +75,20 @@ body {
 
 .dark-mode-button {
   border-radius: 10px;
-  height: 10vw;
-  width: 15vw;
+  height: 11vw;
+  width: 16vw;
   max-height: 75px;
   max-width: 200px;
   margin-bottom: 1rem;
   font-family: "Sigmar One", cursive;
+  font-size: 0.68rem;
   border: 3px groove gray;
   background-image: linear-gradient(black, blue);
   color: orange;
+
+  &:focus {
+    outline: transparent;
+  }
 }
 
 // dark mode toggles
