@@ -47,11 +47,15 @@ document.querySelector(".form__user-input").addEventListener("keyup", event => {
 
 //adding event listener for dark mode button
 
-document.querySelector(".dark-mode-button").addEventListener("click", () => {
+document.querySelector(".dark-mode-button").addEventListener("click", event => {
   document.querySelector(".container").classList.toggle("dark-mode-background");
   document.querySelector(".title").classList.toggle("dark-mode-text");
   document.querySelector(".output").classList.toggle("dark-mode-text");
   document
     .querySelector(".form__user-input")
     .classList.toggle("dark-mode-user-input");
+
+  event.target.innerHTML === "Dark Mode"
+    ? (event.target.innerHTML = "Light Mode")
+    : (event.target.innerHTML = "Dark Mode");
 });
